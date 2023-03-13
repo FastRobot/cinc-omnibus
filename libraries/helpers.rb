@@ -121,6 +121,8 @@ module CincOmnibus
           end
         when 'ubuntu'
           case node['platform_version']
+          when '16.04'
+            'openjdk-8-jdk-headless'
           when '18.04'
             'openjdk-11-jdk-headless'
           when '20.04'
